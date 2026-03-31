@@ -1,5 +1,5 @@
 import type { PortfolioProject } from '../types';
-import placeholderImage from 'figma:asset/bc73bb8a3e11bcaf8016f38de735484fdf83be63.png';
+import placeholderImage from '../assets/bc73bb8a3e11bcaf8016f38de735484fdf83be63.png';
 
 // Dados placeholder para demonstração do template
 // Substitua estes dados pelos projetos reais do cliente

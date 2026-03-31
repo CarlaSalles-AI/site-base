@@ -6,10 +6,12 @@ import { CTASection } from '../components/blocks/cta-section';
    ============================================
    
    CUSTOMIZAR:
-   1. Título: Linha 19
-   2. Textos principais: Linhas 29-49
-   3. Estatísticas: Array stats (linhas 54-56)
-   4. Seção "Para quem é": Linhas 85-95
+   1. Título: Linha 30
+   2. Textos principais: Parágrafos abaixo
+   3. Estatísticas: Array de stats
+   4. Seção "Para quem é": Bullet points
+   5. Processo: Steps do "Como funciona"
+   6. CTA final: Título, descrição e botão
    
    ============================================ */
 
@@ -107,11 +109,11 @@ export default function Sobre() {
             
             <div className="space-y-4">
               {[
-                'A empresa cresceu, mas a marca não acompanhou — e isso já começou a custar negócio',
-                'Você investe em comunicação, mas sente que a mensagem não chega do jeito certo',
-                'Tem identidade visual, mas nunca parou para organizar o posicionamento por trás dela',
-                'Precisa profissionalizar a marca sem perder o que construiu até aqui',
-                'Toda decisão de comunicação ainda depende de improviso ou opinião pessoal'
+                'Perfil de cliente ideal número um — descreva a dor ou situação',
+                'Perfil de cliente ideal número dois — descreva a necessidade',
+                'Perfil de cliente ideal número três — descreva o desafio',
+                'Perfil de cliente ideal número quatro — descreva o objetivo',
+                'Perfil de cliente ideal número cinco — descreva a oportunidade'
               ].map((item, index) => (
                 <motion.div 
                   key={index} 
@@ -134,7 +136,7 @@ export default function Sobre() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 }}
             >
-              Trabalhamos principalmente com pequenas e médias empresas e negócios em expansão que chegaram num ponto onde crescer sem organizar a marca deixou de ser opção.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </motion.p>
           </div>
         </div>
@@ -159,30 +161,30 @@ export default function Sobre() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Não é um processo rígido — é uma lógica que a gente refinou ao longo de anos, projeto a projeto. O ritmo e a profundidade mudam conforme o que o negócio precisa.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nosso processo é flexível e adaptável às necessidades de cada projeto.
             </motion.p>
             
             <div className="space-y-8">
               {[
                 { 
-                  title: 'Diagnóstico', 
-                  description: 'Olhamos para o momento real da marca: o que funciona, o que destoa, onde está o desalinhamento. Sem achismo.' 
+                  title: 'Etapa 1', 
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.' 
                 },
                 { 
-                  title: 'Direção', 
-                  description: 'Definimos o que a marca precisa ser: posicionamento, mensagem central, diferenciação, critérios de coerência. O suficiente para orientar tudo que vem depois.' 
+                  title: 'Etapa 2', 
+                  description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.' 
                 },
                 { 
-                  title: 'Expressão', 
-                  description: 'Traduzimos a estratégia em linguagem, design, presença — o que o mercado vai ver, ouvir e sentir.' 
+                  title: 'Etapa 3', 
+                  description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.' 
                 },
                 { 
-                  title: 'Aplicação', 
-                  description: 'Desdobramos nos pontos de contato que mais importam para o negócio. Sem dispersar esforço.' 
+                  title: 'Etapa 4', 
+                  description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.' 
                 },
                 { 
-                  title: 'Evolução', 
-                  description: 'Acompanhamos, medimos, ajustamos. Marca é organismo vivo — o trabalho não termina na entrega.' 
+                  title: 'Etapa 5', 
+                  description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.' 
                 }
               ].map((step, index) => (
                 <motion.div 
@@ -208,9 +210,9 @@ export default function Sobre() {
       </section>
 
       <CTASection 
-        title="O mercado não espera a sua marca ficar pronta."
-        description="Enquanto o negócio cresce, o público muda e a concorrência se movimenta, a marca ou acompanha ou atrasa. Sua empresa ajuda a manter isso organizado — com estratégia clara, design que funciona e aplicação que o negócio consegue sustentar."
-        buttonText="Vamos conversar sobre a sua marca"
+        title="SEU TÍTULO DE CHAMADA AQUI"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Fale Conosco"
         buttonHref="/contato"
       />
     </div>

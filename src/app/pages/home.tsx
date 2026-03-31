@@ -99,9 +99,9 @@ export default function Home() {
       )}
 
       <CTASection
-        title="O MERCADO NÃO ESPERA SUA MARCA FICAR PRONTA"
-        description="Enquanto o negócio cresce, o público muda e a concorrência se movimenta, a marca ou acompanha ou atrasa.|Sua empresa ajuda a manter isso organizado com estratégia clara, design que funciona e aplicação que o negócio consegue sustentar."
-        buttonText="Faça agora um diagnóstico"
+        title="SEU TÍTULO DE CHAMADA AQUI"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.|Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        buttonText="Fale Conosco"
         buttonHref="/contato"
       />
     </div>

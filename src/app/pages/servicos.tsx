@@ -3,27 +3,41 @@ import { motion } from 'motion/react';
 import { ServicesSection } from '../components/blocks/services-section';
 import { CTASection } from '../components/blocks/cta-section';
 
+/* ============================================
+   🛠️ SERVIÇOS - PÁGINA DE SOLUÇÕES
+   ============================================
+   
+   CUSTOMIZAR:
+   1. Título hero: Linha 36
+   2. Descrição hero: Linha 44
+   3. Serviços principais: Array mainServices
+   4. Seção intermediária: Textos e bullet points
+   5. Processo: Steps do "Como funciona"
+   6. CTA final: Título, descrição e botão
+   
+   ============================================ */
+
 export default function Servicos() {
   const mainServices = [
     {
       icon: Target,
-      title: 'Gestão de Marca',
-      description: 'Marca não é um projeto pontual. É um sistema em operação.\n\nSua empresa estrutura a marca como um ativo estratégico, organizando posicionamento, linguagem e tomada de decisão ao longo do tempo.\n\nGarantimos consistência entre o que a marca diz, faz e entrega — sustentando valor, reconhecimento e crescimento de forma contínua.'
+      title: 'Serviço 1',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.'
     },
     {
       icon: Lightbulb,
-      title: 'Design Thinking',
-      description: 'Usamos o design como método de pensamento — não como estética.\n\nInvestigamos contextos, revelamos problemas reais de marca e negócio e organizamos decisões com base em estratégia, não em suposições.\n\nTransformamos complexidade em clareza para construir soluções que funcionam no mundo real — não apenas em apresentações.'
+      title: 'Serviço 2',
+      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.'
     },
     {
       icon: Palette,
-      title: 'Design Comercial',
-      description: 'A marca precisa funcionar onde o negócio acontece.\n\nNo material de vendas, nas campanhas, no digital e em cada ponto de contato com o cliente, o design sustenta o posicionamento e orienta a decisão.\n\nLevamos a estratégia até a execução, garantindo consistência, clareza e impacto.'
+      title: 'Serviço 3',
+      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.'
     },
     {
       icon: Cpu,
-      title: 'Produtos Digitais',
-      description: 'Produtos digitais são pontos ativos da marca em operação.\n\nDesenvolvemos interfaces, plataformas e experiências que conectam estratégia, usabilidade e negócio — transformando interação em valor.\n\nCada produto é pensado para performar, escalar e reforçar a marca em todos os níveis de uso.'
+      title: 'Serviço 4',
+      description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus.'
     }
   ];
 
@@ -49,7 +63,7 @@ export default function Servicos() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Branding não precisa ser complicado. Precisa ser bem feito. Oferecemos um conjunto integrado de soluções para organizar marca, posicionamento e comunicação de empresas que precisam crescer com clareza.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Oferecemos um conjunto integrado de soluções para atender às necessidades do seu negócio com qualidade e eficiência.
             </motion.p>
           </div>
         </div>
@@ -71,7 +85,7 @@ export default function Servicos() {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              Marca não é logo. É a leitura que o mercado faz do seu negócio.
+              Seu título de destaque aqui
             </motion.h2>
             <motion.p
               className="text-lg leading-relaxed text-muted-foreground mb-8"
@@ -80,7 +94,7 @@ export default function Servicos() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Se essa leitura está confusa, o problema não é de design — é de direção. E quando falta direção, sobra retrabalho, comunicação desconexa e oportunidade perdida.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </motion.p>
 
             <motion.div
@@ -91,13 +105,13 @@ export default function Servicos() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p className="text-lg leading-relaxed text-muted-foreground">
-                O trabalho da sua empresa é dar estrutura para que a marca:
+                Nosso trabalho garante que:
               </p>
               <ul className="space-y-3 text-lg text-muted-foreground ml-6">
-                <li>• diga o que precisa dizer, sem ruído</li>
-                <li>• se mantenha coerente nos pontos de contato que importam</li>
-                <li>• sustente o crescimento em vez de travar por falta de organização</li>
-                <li>• ajude o negócio a tomar decisões melhores sobre comunicação, presença e experiência</li>
+                <li>• Benefício ou diferencial número um</li>
+                <li>• Benefício ou diferencial número dois</li>
+                <li>• Benefício ou diferencial número três</li>
+                <li>• Benefício ou diferencial número quatro</li>
               </ul>
             </motion.div>
 
@@ -108,7 +122,7 @@ export default function Servicos() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
             >
-              Nosso jeito de trabalhar não parte de fórmulas prontas. Parte do negócio como ele é — com suas limitações, seu contexto e seus objetivos reais. Isso muda tudo.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </motion.p>
           </div>
         </div>
@@ -133,29 +147,29 @@ export default function Servicos() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Não é um processo rígido — é uma lógica que a gente refinou ao longo de anos, projeto a projeto. O ritmo e a profundidade mudam conforme o que o negócio precisa.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nosso processo é adaptável às necessidades de cada projeto.
             </motion.p>
             <div className="space-y-8 mt-12">
               {[
                 { 
-                  title: 'Diagnóstico', 
-                  description: 'Olhamos para o momento real da marca: o que funciona, o que destoa, onde está o desalinhamento. Sem achismo.' 
+                  title: 'Etapa 1', 
+                  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.' 
                 },
                 { 
-                  title: 'Direção', 
-                  description: 'Definimos o que a marca precisa ser: posicionamento, mensagem central, diferenciação, critérios de coerência. O suficiente para orientar tudo que vem depois.' 
+                  title: 'Etapa 2', 
+                  description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.' 
                 },
                 { 
-                  title: 'Expressão', 
-                  description: 'Traduzimos a estratégia em linguagem, design, presença — o que o mercado vai ver, ouvir e sentir.' 
+                  title: 'Etapa 3', 
+                  description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.' 
                 },
                 { 
-                  title: 'Aplicação', 
-                  description: 'Desdobramos nos pontos de contato que mais importam para o negócio. Sem dispersar esforço.' 
+                  title: 'Etapa 4', 
+                  description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.' 
                 },
                 { 
-                  title: 'Evolução', 
-                  description: 'Acompanhamos, medimos, ajustamos. Marca é organismo vivo — o trabalho não termina na entrega.' 
+                  title: 'Etapa 5', 
+                  description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.' 
                 }
               ].map((item, index) => (
                 <motion.div 
@@ -183,9 +197,9 @@ export default function Servicos() {
       </section>
 
       <CTASection
-        title="O mercado não espera a sua marca ficar pronta."
-        description="Enquanto o negócio cresce, o público muda e a concorrência se movimenta, a marca ou acompanha ou atrasa. Sua empresa ajuda a manter isso organizado — com estratégia clara, design que funciona e aplicação que o negócio consegue sustentar."
-        buttonText="Vamos conversar sobre a sua marca"
+        title="SEU TÍTULO DE CHAMADA AQUI"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        buttonText="Fale Conosco"
         buttonHref="/contato"
       />
     </div>
