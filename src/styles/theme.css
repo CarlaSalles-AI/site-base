@@ -1,0 +1,234 @@
+@import "tailwindcss";
+@import "./fonts.css";
+
+/* ============================================
+   🎨 CUSTOMIZAÇÃO DE CORES DO TEMPLATE
+   ============================================
+   
+   Altere as cores abaixo para personalizar:
+   - DARK MODE: --color-primary (laranja padrão)
+   - LIGHT MODE: --color-primary-dark (azul padrão)
+   
+   NOTA: Fonte Montserrat carregada via index.html
+   
+   ============================================ */
+
+@theme {
+  /* ========== CORES PRIMÁRIAS ========== */
+  --color-primary: #666666;           /* Cinza neutro - DARK MODE */
+  --color-primary-dark: #333333;      /* Cinza escuro - LIGHT MODE */
+  --color-primary-foreground: #ffffff;
+  
+  /* ========== CORES DE FUNDO ========== */
+  --color-background: #000000;         /* Preto - DARK MODE */
+  --color-background-dark: #ffffff;    /* Branco - LIGHT MODE */
+  
+  --color-foreground: #ffffff;         /* Texto branco - DARK MODE */
+  --color-foreground-dark: #000000;    /* Texto preto - LIGHT MODE */
+  
+  /* ========== CORES SECUNDÁRIAS ========== */
+  --color-secondary: #f5f5f5;         /* Cinza claro - DARK MODE */
+  --color-secondary-dark: #1a1a1a;    /* Cinza escuro - LIGHT MODE */
+  --color-secondary-foreground: #0a0a0a;
+  
+  /* ========== CORES ACENTUADAS ========== */
+  --color-accent: #e8e8e8;            /* Cinza claro - DARK MODE */
+  --color-accent-dark: #262626;       /* Cinza escuro - LIGHT MODE */
+  --color-accent-foreground: #0a0a0a;
+  
+  /* ========== CORES MUTED ========== */
+  --color-muted: #fafafa;             /* Cinza claro - DARK MODE */
+  --color-muted-dark: #1a1a1a;        /* Cinza escuro - LIGHT MODE */
+  --color-muted-foreground: #6b6b6b;
+  
+  /* ========== CORES DE CARTÃO ========== */
+  --color-card: #ffffff;              /* Branco - DARK MODE */
+  --color-card-dark: #0a0a0a;         /* Preto - LIGHT MODE */
+  --color-card-foreground: #0a0a0a;
+  
+  /* ========== CORES DE POPOVER ========== */
+  --color-popover: #ffffff;           /* Branco - DARK MODE */
+  --color-popover-dark: #0a0a0a;      /* Preto - LIGHT MODE */
+  --color-popover-foreground: #0a0a0a;
+  
+  /* ========== CORES DESTRUTIVAS ========== */
+  --color-destructive: #dc2626;       /* Vermelho - DARK MODE */
+  --color-destructive-dark: #dc2626;  /* Vermelho - LIGHT MODE */
+  --color-destructive-foreground: #ffffff;
+  
+  /* ========== CORES DE BORDA ========== */
+  --color-border: rgba(0, 0, 0, 0.08); /* Cinza claro - DARK MODE */
+  --color-border-dark: rgba(255, 255, 255, 0.08); /* Cinza claro - LIGHT MODE */
+  --color-input: rgba(0, 0, 0, 0.1);  /* Cinza claro - DARK MODE */
+  --color-input-dark: rgba(255, 255, 255, 0.1); /* Cinza claro - LIGHT MODE */
+  --color-input-background: #fafafa;  /* Cinza claro - DARK MODE */
+  --color-input-background-dark: #1a1a1a; /* Cinza escuro - LIGHT MODE */
+  --color-switch-background: #e5e5e5; /* Cinza claro - DARK MODE */
+  --color-switch-background-dark: #262626; /* Cinza escuro - LIGHT MODE */
+  --color-ring: rgba(10, 10, 10, 0.2); /* Cinza claro - DARK MODE */
+  --color-ring-dark: rgba(250, 250, 250, 0.2); /* Cinza claro - LIGHT MODE */
+  
+  /* ========== ESPAÇAMENTO ========== */
+  --spacing-section: 160px;
+  --spacing-section-sm: 96px;
+  --spacing-block: 64px;
+  --spacing-element: 32px;
+  
+  /* ========== RAIO ========== */
+  --radius: 4px;
+  
+  /* ========== SOMBRAS ========== */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+  
+  /* ========== GRÁFICOS ========== */
+  --color-chart-1: #0a0a0a;
+  --color-chart-2: #6b6b6b;
+  --color-chart-3: #a3a3a3;
+  --color-chart-4: #d4d4d4;
+  --color-chart-5: #e8e8e8;
+  
+  /* ========== SIDEBAR ========== */
+  --color-sidebar: #fafafa;
+  --color-sidebar-dark: #0f0f0f; /* Preto - LIGHT MODE */
+  --color-sidebar-foreground: #0a0a0a;
+  --color-sidebar-primary: #0a0a0a;
+  --color-sidebar-primary-foreground: #ffffff;
+  --color-sidebar-accent: #f5f5f5;
+  --color-sidebar-accent-foreground: #0a0a0a;
+  --color-sidebar-border: rgba(0, 0, 0, 0.06);
+  --color-sidebar-ring: rgba(10, 10, 10, 0.2);
+}
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-card: var(--color-card);
+  --color-card-foreground: var(--color-card-foreground);
+  --color-popover: var(--color-popover);
+  --color-popover-foreground: var(--color-popover-foreground);
+  --color-primary: var(--color-primary);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-foreground: var(--color-secondary-foreground);
+  --color-muted: var(--color-muted);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-accent: var(--color-accent);
+  --color-accent-foreground: var(--color-accent-foreground);
+  --color-destructive: var(--color-destructive);
+  --color-destructive-foreground: var(--color-destructive-foreground);
+  --color-border: var(--color-border);
+  --color-input: var(--color-input);
+  --color-input-background: var(--color-input-background);
+  --color-switch-background: var(--color-switch-background);
+  --color-ring: var(--color-ring);
+  --color-chart-1: var(--color-chart-1);
+  --color-chart-2: var(--color-chart-2);
+  --color-chart-3: var(--color-chart-3);
+  --color-chart-4: var(--color-chart-4);
+  --color-chart-5: var(--color-chart-5);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--color-sidebar);
+  --color-sidebar-foreground: var(--color-sidebar-foreground);
+  --color-sidebar-primary: var(--color-sidebar-primary);
+  --color-sidebar-primary-foreground: var(--color-sidebar-primary-foreground);
+  --color-sidebar-accent: var(--color-sidebar-accent);
+  --color-sidebar-accent-foreground: var(--color-sidebar-accent-foreground);
+  --color-sidebar-border: var(--color-sidebar-border);
+  --color-sidebar-ring: var(--color-sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  /* Premium Editorial Typography with Montserrat */
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1.0625rem;
+    font-weight: var(--font-weight-normal);
+    line-height: 1.7;
+    color: var(--muted-foreground);
+  }
+
+  label {
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  button {
+    font-size: 0.9375rem;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+    letter-spacing: 0.005em;
+  }
+
+  input, textarea {
+    font-size: 1rem;
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+  
+  /* Premium spacing utilities */
+  .section-spacing {
+    padding-top: var(--spacing-section);
+    padding-bottom: var(--spacing-section);
+  }
+  
+  .section-spacing-sm {
+    padding-top: var(--spacing-section-sm);
+    padding-bottom: var(--spacing-section-sm);
+  }
+}

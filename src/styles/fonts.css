@@ -1,0 +1,14 @@
+/* ============================================
+   🎨 FONTES DO TEMPLATE
+   ============================================
+   
+   Google Fonts são importadas via index.css
+   
+   Para trocar a fonte:
+   1. Vá em https://fonts.google.com
+   2. Escolha sua fonte
+   3. Copie o @import
+   4. Cole em /src/styles/index.css (linha 8)
+   5. Atualize font-family em theme.css
+   
+   ============================================ */
